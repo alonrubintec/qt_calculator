@@ -7,7 +7,7 @@ class UI(QWidget):
         super().__init__()
         uic.loadUi("Calculator.ui", self)
 
-        # Define button functions
+        # Define buttons functions
         self.btn_ac.clicked.connect(lambda: self.clear())
         self.btn_back.clicked.connect(lambda: self.backspace())
         self.btn_equal.clicked.connect(lambda: self.calculate())
@@ -57,7 +57,7 @@ class UI(QWidget):
                         return
         rounded_number = round(result, 2)
         self.result_label.setText(str(rounded_number))
-        # self.math_label.setText(str(rounded_number))
+        self.math_label.setText(str(rounded_number))
 
 
 app = QApplication([])
