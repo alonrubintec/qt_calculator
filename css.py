@@ -1,3 +1,4 @@
+
 equal = """QPushButton {
     background-color: rgb(26, 172, 255);
     color: rgb(255, 255, 255);
